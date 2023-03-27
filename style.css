@@ -1,34 +1,47 @@
+/*04CSSフォント設定*/
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;800&display=swap');
-
+/*04CSSフォント設定*/
 body{
   font-family: 'M PLUS Rounded 1c', sans-serif;
 }
-
+/*04CSSフォント設定*/
 h1,h2,h3{
   font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", sans-serif;
 }
-
+/*06文字装飾*/
 h2{
   border-bottom: 1px solid #1e2022;
 }
-
+/*05レイアウト*/
 ul li,ol li{
-  padding:1em 0;
+  padding:1em;/*07擬似クラス*/
+  list-style-position: inside;/*07擬似クラス*/
 }
-
+/*06文字装飾*/
 ol.answers{
   list-style: upper-alpha;
 }
-
+/*07擬似クラス*/
+ol.answers li:hover{
+  border: 0.1em solid #1671cc;
+  background-color: chartreuse;
+  padding:0.9em;
+  cursor:pointer;
+}
+/*07擬似クラス*/
+div#section-correct-answer{
+  display:none;
+}
+/*06文字装飾*/
 span#correct-answer{
   font-weight: bold;
   color:rgb(212, 26, 26);
 }
-
+/*05レイアウト*/
 #main{
   padding:0 1.5em;
 }
-
+/*05レイアウト*/
 div.section {
   margin-top:2em;
 }
